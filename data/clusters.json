@@ -1,0 +1,83 @@
+[
+  {
+    "id": "3fa85f64-5717-4562-b3fc-2c963f66afa6",
+    "name": "Cluster A",
+    "iops": [
+      {
+        "timestamp": "2023-11-21T00:00:00Z",
+        "read": 5000,
+        "write": 4000
+      },
+      {
+        "timestamp": "2023-11-22T00:00:00Z",
+        "read": 3000,
+        "write": 2500
+      },
+      {
+        "timestamp": "2023-11-23T00:00:00Z",
+        "read": 20000,
+        "write": 122000
+      },
+      {
+        "timestamp": "2023-11-24T00:00:00Z",
+        "read": 5000,
+        "write": 3000
+      },
+      {
+        "timestamp": "2023-11-25T00:00:00Z",
+        "read": 21000,
+        "write": 1500
+      }
+    ],
+    "throughput": [
+      {
+        "timestamp": "2023-11-21T00:00:00Z",
+        "read": 1024000,
+        "write": 524288
+      },
+      {
+        "timestamp": "2023-11-22T00:00:00Z",
+        "read": 2048000,
+        "write": 1048576
+      },
+      {
+        "timestamp": "2023-11-23T00:00:00Z",
+        "read": 1024000,
+        "write": 524288
+      },
+      {
+        "timestamp": "2023-11-24T00:00:00Z",
+        "read": 512000,
+        "write": 262144
+      },
+      {
+        "timestamp": "2023-11-25T00:00:00Z",
+        "read": 1024000,
+        "write": 524288
+      }
+    ],
+    "snapshot_policy": {
+      "policy_name": "ProjectX_Dailys",
+      "apply_to_directory": "/Production/ProjectX",
+      "schedule_type": "Daily",
+      "timezone": "America/Los_Angeles",
+      "snapshot_time": "15:0",
+      "days": {
+        "monday": true,
+        "tuesday": true,
+        "wednesday": false,
+        "thursday": true,
+        "friday": false,
+        "saturday": false,
+        "sunday": true,
+        "everyday": true
+      },
+      "delete_schedule": {
+        "option": "after",
+        "days": 99
+      },
+      "enable_policy": true,
+      "lock_snapshots": false
+    }
+  }
+]
